@@ -44,7 +44,13 @@ FrostOrthoをご購入いただきありがとうございます！
     - [ikusou　NarrowCap 17](https://booth.pm/ja/items/7406191)
   - notra  
       PBT製で質感がとてもいいです！
-      - [Plot.　notra](https://plotoftheprototype.com/products/notra)
+    - [Plot.　notra](https://plotoftheprototype.com/products/notra)
+  - Tai-Hao  
+    半透明でかわいい。フラット形状です。
+    - [Tai-Hao MT 165 狭ピッチ対応 MX ロープロファイル キーキャップ 半透明](https://shop.beekeeb.jp/products/tai-hao-mt-165-translucent)
+  - shell-caps  
+    PBT製で質感がとてもよく、とにかくかわいい。キーケットで手に入れた方はぜひ。
+    - [omuken　shell-caps](https://site.omuken.me/shell-caps/)
 
 - ↓ 持っていないものの17mmのもの ↓
   - [ゆshop　flat 17mmピッチ対応 印字キーキャップ](https://booth.pm/ja/items/7299687)
