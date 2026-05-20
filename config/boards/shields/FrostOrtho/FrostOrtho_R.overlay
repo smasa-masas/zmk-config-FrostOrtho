@@ -70,6 +70,13 @@
 };
 
 &trackball_listener {
+    slow_cursor {
+        layers = <5>; // レイヤー5の時だけ有効
+        input-processors = <
+            &zip_xy_scaler 1 2 // カーソル速度を半分
+        >;
+    };
+
     scroller_y {
         layers = <5>; // 縦スクロールレイヤー
         input-processors = <
