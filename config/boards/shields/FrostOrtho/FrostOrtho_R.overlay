@@ -71,7 +71,7 @@
 
 &trackball_listener {
     slow_cursor {
-        layers = <5>; // レイヤー5の時だけ有効
+        layers = <6>; // レイヤー5の時だけ有効
         input-processors = <
             &zip_xy_scaler 1 2 // カーソル速度を半分
         >;
