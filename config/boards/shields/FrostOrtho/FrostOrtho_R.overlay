@@ -20,18 +20,18 @@
 };
 
 // &zip_temp_layer {
-    // キー入力後400ms以内はAMLに切り替わらない
-    require-prior-idle-ms = <400>;
-    // AMLから離脱しないキー
-    excluded-positions = <
-        6 // U 左クリック
-        7 // I 右クリック
-        8 // O 中央クリック
-        20 // Z Shift
-        30 // Control
-        32 // Alt
-    >;
-};
+//    // キー入力後400ms以内はAMLに切り替わらない
+//    require-prior-idle-ms = <400>;
+//    // AMLから離脱しないキー
+//    excluded-positions = <
+//        6 // U 左クリック
+//        7 // I 右クリック
+//        8 // O 中央クリック
+//        20 // Z Shift
+//        30 // Control
+//        32 // Alt
+//    >;
+// };
 
 / {
     input_processors {
