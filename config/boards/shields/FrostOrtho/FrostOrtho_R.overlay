@@ -39,18 +39,39 @@
 };
 
 / {
+    input_processors {
+        // layer 6 用：カーソル移動量が通常の1/2倍（半分）
+        zip_xy_scaler_layer6: zip_xy_scaler_layer6 {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_X INPUT_REL_Y>;
+            track-remainders;
+        };
+    };
+
     trackball_listener: trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        // input-processors = <&mouse_runtime_input_processor>;
         input-processors = <
             &mouse_runtime_input_processor
-            &zip_xy_scaler 2 3 // カーソル移動量2/3倍
-            &zip_xy_transform INPUT_TRANSFORM_X_INVERT // カーソルの移動方向調整
-            &zip_xy_transform INPUT_TRANSFORM_Y_INVERT // カーソルの移動方向調整
+            &zip_xy_scaler 2 3 // カーソル移動量2/3倍（通常）
+            &zip_xy_transform INPUT_TRANSFORM_X_INVERT
+            &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
         >;
+
+        // layer 6 専用設定：カーソル移動量を半分にする
+        mouse_layer_6 {
+            layers = <6>;
+            input-processors = <
+                &mouse_runtime_input_processor
+                &zip_xy_scaler_layer6 1 2 // カーソル移動量1/2倍（半分）
+                &zip_xy_transform INPUT_TRANSFORM_X_INVERT
+                &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
+            >;
+        };
     };
 };
 
